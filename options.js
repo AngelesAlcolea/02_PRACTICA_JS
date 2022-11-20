@@ -1,6 +1,12 @@
 import { randomInt } from 'crypto';
 import { students } from "./database.js"
 
+
+export function option1() {
+    console.log("\nTabla de estudiantes:");
+    console.table(students);
+};
+
 export function option2() {
     console.log("\nNúmero de estudiantes: " + students.length);
 };

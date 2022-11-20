@@ -53,7 +53,7 @@ function showMenu() {
 function executeOption(opt) {
     switch (opt) {
         case "1":
-            console.log(students)
+            console.table(students)
             break;
         case "2":
             console.log("\nNúmero de estudiantes: " + students.length);

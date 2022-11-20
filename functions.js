@@ -1,4 +1,4 @@
-import { option2, option3, option4, option5 } from "./options.js"
+import { option1, option2, option3, option4, option5 } from "./options.js"
 
 //Menú de opciones
 export function showMenu() {
@@ -29,6 +29,7 @@ export function showMenu() {
 export function executeOption(opt) {
     switch (opt) {
         case "1":
+            option1();
             break;
         case "2":
             option2();
