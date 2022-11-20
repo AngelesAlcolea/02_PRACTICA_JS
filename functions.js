@@ -1,4 +1,4 @@
-import "./options.js"
+import { option2, option3, option4, option5 } from "./options.js"
 
 //Menú de opciones
 export function showMenu() {
