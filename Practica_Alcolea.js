@@ -134,6 +134,13 @@ function executeOption(opt) {
     case "10":
       break;
     case "11":
+      ages = students.map(function(obj) {
+        return obj.age;
+      });
+      minAgeStudents = students.filter(obj => obj.age == ages.min());
+      minAgeName = minAgeStudents.map(function(obj) {
+        return obj.name;
+      });
       if (minAgeName.length > 1) {
         console.log("\nLas personas más jovenes de la clase son: ", minAgeName);
       } else {
@@ -141,14 +148,27 @@ function executeOption(opt) {
       };
       break;
     case "12":
+      ages = students.map(function(obj) {
+        return obj.age;
+      });
+      ageAverage = ages.reduce((a, b) => a + b, 0) / ages.length;
       console.log("\nLa media de edad de la clase es: ", ageAverage);
       break;
     case "13":
+      femaleStudents = students.filter(obj => obj.gender === "female");
+      ageFemales = femaleStudents.map(function(obj) {
+        return obj.age;
+      });
+      femaleAgeAverage = ageFemales.reduce((a, b) => a + b, 0) / ageFemales.length;
       console.log("\nLa media de edad de las chicas de la clase es: ", femaleAgeAverage);
       break;
     case "14":
       break;
     case "15":
+      names = students.map(function(obj) {
+        return obj.name;
+      });
+      console.log("\nLa lista de alumnos en orden alfabético es: ", names.sort());
       break;
     default:
       break;
