@@ -21,8 +21,16 @@ let students = [{
     name: 'silvia'
 }];
 
-//Lista con los nombres de los alumnos
+//Definición de variables
 let names = [];
+let femaleStudents = students.filter(obj => obj.gender === "female");
+let maleStudents = students.filter(obj => obj.gender === "male");
+let testFemale = false;
+let ageIntervalStudents = students.filter(obj => obj.age >= 20 && obj.age <= 25);
+
+let ageIntervalNames = ageIntervalStudents.map(function(obj) {
+  return obj.name;
+});
 
 //Menú de opciones
 function showMenu() {
@@ -74,12 +82,25 @@ function executeOption(opt) {
             console.log("\nUn alumno ha sido eliminado aleatoriamente. Si desea ver la lista de alumnos restantes elija la opción 1.")
             break;
         case "6":
+            femaleStudents = students.filter(obj => obj.gender === "female");
+            console.log("\nLas alumnas son: ");
+            console.table(femaleStudents);
             break;
         case "7":
+            femaleStudents = students.filter(obj => obj.gender === "female");
+            maleStudents = students.filter(obj => obj.gender === "male");
+            console.log("\nEl número de chicos es: " + maleStudents.length);
+            console.log("El número de chicas es: " + femaleStudents.length);
             break;
         case "8":
+            maleStudents = students.filter(obj => obj.gender === "male");
+            if (maleStudents.length == 0) {
+                testFemale = true;
+            };
+            console.log("\n¿Todos los alumnos de la clase son chicas?: " + testFemale);
             break;
         case "9":
+            console.log("\nLos alumnos/as que tienen entre 20 y 25 años se llaman: ", ageIntervalNames);
             break;
         case "10":
             break;
