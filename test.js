@@ -1,5 +1,5 @@
 let students = [{
-    age: 32,
+    age: 29,
     examScores: [],
     gender: 'male',
     name: 'edu'
@@ -11,10 +11,10 @@ let students = [{
     name: 'silvia'
 }];
 
-let ageIntervalStudents = students.filter(obj => obj.age >= 20 && obj.age <= 25);
-
-let ageIntervalNames = ageIntervalStudents.map(function(obj) {
-  return obj.name;
+let femaleStudents = students.filter(obj => obj.gender === "female");
+let ageFemales = femaleStudents.map(function(obj) {
+  return obj.age;
 });
+let femaleAgeAverage = ageFemales.reduce((a, b) => a + b, 0) / ageFemales.length;
 
-console.log("\nLos alumnos/as que tienen entre 20 y 25 años se llaman: ", ageIntervalNames);
+console.log("\nLa media de edad de las chicas de la clase es: ", femaleAgeAverage);
