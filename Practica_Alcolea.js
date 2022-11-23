@@ -29,6 +29,9 @@ Array.prototype.max = function() {
 };
 
 //Definición de variables
+const availableGenders = ['male', 'female'];
+const availableMaleNames = ['pepe', 'juan', 'victor', 'leo', 'francisco', 'carlos'];
+const availableFemaleNames = ['cecilia', 'ana', 'luisa', 'alicia', 'isabel', 'virginia'];
 let names = [];
 let femaleStudents = students.filter(obj => obj.gender === "female");
 let maleStudents = students.filter(obj => obj.gender === "male");
@@ -132,6 +135,24 @@ function executeOption(opt) {
       };
       break;
     case "10":
+      const randAge = randomInt(20, 51);
+      const randGender = availableGenders[randomInt(0, availableGenders.length)];
+      let randName = "";
+      if (randGender == "male") {
+        randName = availableMaleNames[randomInt(0, availableMaleNames.length)]
+      } else {
+        randName = availableFemaleNames[randomInt(0, availableFemaleNames.length)]
+      };
+      const randScores = [];
+      const newAlumn = {
+        age: randAge,
+        examScores: randScores,
+        gender: randGender,
+        name: randName
+      };
+      students.push(newAlumn);
+      console.log("\nEl nuevo alumno/a es: ");
+      console.table(newAlumn);
       break;
     case "11":
       ages = students.map(function(obj) {
@@ -163,6 +184,11 @@ function executeOption(opt) {
       console.log("\nLa media de edad de las chicas de la clase es: ", femaleAgeAverage);
       break;
     case "14":
+      students.map(function (obj) {
+        obj.examScores.push(randomInt(0, 11));
+      });
+      console.log("\nLas nuevas notas son:");
+      console.table(students);
       break;
     case "15":
       names = students.map(function(obj) {
