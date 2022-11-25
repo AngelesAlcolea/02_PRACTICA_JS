@@ -12,6 +12,7 @@ Contiene las instruciones facilitadas para empezar la práctica.
  #### 2 Practica_Alcolea_Import.js (main)
  
 Contiene las funciones que piden input al usuario a través de la consola, pudiendo elegir entre las 15 opciones disponibles.
+
 Este imput se gestiona con una promesa que se resuelve con un await que nos permite ejecutar la opción elegida.
 
  #### 3 database.js 
@@ -20,8 +21,10 @@ Con este archivo accedemos a los datos de la lista de estudiantes proporcionados
 
  #### 4 functions.js
 
-En este archivo importamos las opciones que se reuelven en el archivo options.js 
+En este archivo importamos las opciones que se resuelven en el archivo options.js.
+
 Mostramos las 15 opciones del showMenu por consola.
+
 Tambien aquí se desarrolla la función ejecuteOption con un switch de cada opción.
 
  #### 5 options.js
