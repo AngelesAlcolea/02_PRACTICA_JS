@@ -14,7 +14,7 @@ Contiene las instruciones facilitadas por el profesor para realizar la práctica
 En este archivo se encuentra el código completo para que la práctica funcione con todos los requisitos.
 
 #### 3 Practica_Alcolea_Import.js (main)  
-Contien el mismo código de la práctica inicial pero separado en diferentes archivos para aligerar el programa y darle mejor funcionalidad.
+Contiene el mismo código de la práctica inicial pero separado en diferentes archivos para aligerar el programa y darle mejor funcionalidad.
 
 En este, concretamente, se situa la funcion que pide un input al usuario mediante la consola, para que elija una opción de las 15 disponibles, la promesa que gestiona la asincronía de este imput y el await para que el resto de código espere a la resolución de la promesa.  
 Cuando esta se resuelve, se ejecutan la opción elegida y se muestra de nuevo el menú de opciones.
@@ -39,5 +39,5 @@ Tambien aquí se desarrolla la función ejecuteOption con un switch de cada opci
 #### 8 options.js
 
 Aquí se desarrollan las funciones de cada opción, una a una según el caso, se muestran por consola y se exportan para poder ejecutarlas en el archivo functions.js  
-### 9 package.jason  
+#### 9 package.jason  
 
