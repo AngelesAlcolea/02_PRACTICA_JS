@@ -40,4 +40,5 @@ Tambien aquí se desarrolla la función ejecuteOption con un switch de cada opci
 
 Aquí se desarrollan las funciones de cada opción, una a una según el caso, se muestran por consola y se exportan para poder ejecutarlas en el archivo functions.js  
 #### 9 package.jason  
+    "type": "module"
 
