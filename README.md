@@ -13,26 +13,29 @@ Contiene las instruciones facilitadas por el profesor para realizar la práctica
 #### 2 Practica_Alcolea.js (main)  
 En este archivo se encuentra el código completo para que la práctica funcione con todos los requisitos.
 
+#### 3 Practica_Alcolea_Import.js (main)  
+Contien el mismo código de la práctica inicial pero separado en diferentes archivos para aligerar el programa y darle mejor funcionalidad.
 
-#### 3 Practica_Alcolea_Import.js (main)
+En este, concretamente, se situa la funcion que pide un input al usuario mediante la consola, para que elija una opción de las 15 disponibles, la promesa que gestiona la asincronía de este imput y el await para que el resto de código espere a la resolución de la promesa.  
+Cuando esta se resuelve, se ejecutan la opción elegida y se muestra de nuevo el menú de opciones.
 
 #### 4 Readme.md
 
-#### 5 challenge.js
- 
-Contiene las funciones que piden input al usuario a través de la consola, pudiendo elegir entre las 15 opciones disponibles.  
-Este imput se gestiona con una promesa que se resuelve con un await que nos permite ejecutar la opción elegida.
+Archivo en el que nos encontramos, que detalla la descripción del programa.
+
+#### 5 challenge.js  
+Aquí estan los datos concretos proporcionados en el CHALLENGE: listado de alumnos y otras funcionalidades??
 
 #### 6 database.js 
 
 Con este archivo accedemos a los datos de la lista de estudiantes proporcionados en el challenge.
 
-####  functions.js
+#### 7 functions.js
 
 En este archivo importamos las opciones que se resuelven en el archivo options.js.  
 Mostramos las 15 opciones del showMenu por consola.  
 Tambien aquí se desarrolla la función ejecuteOption con un switch de cada opción.
 
-#### 5 options.js
+#### 8 options.js
 
-Aquí se desarrollan las funciones de cada opción una a una según el caso y se muestran por consola y se exportan para poder ejecutarlas en el archivo functions.js
+Aquí se desarrollan las funciones de cada opción, una a una según el caso, se muestran por consola y se exportan para poder ejecutarlas en el archivo functions.js
