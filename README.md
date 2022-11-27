@@ -16,29 +16,30 @@ En este archivo se encuentra el código completo para que la práctica funcione 
 #### 3 Practica_Alcolea_Import.js  
 Contiene el mismo código de la práctica inicial pero separado en diferentes archivos para aligerar el programa y darle mejor funcionalidad.
 
-En este, concretamente, se situa la funcion que pide un input al usuario mediante la consola, para que elija una opción de las 15 disponibles, la promesa que gestiona la asincronía de este imput y el await para que el resto de código espere a la resolución de la promesa.  
+En este, concretamente, se situa la función que pide un input al usuario mediante la consola, para que elija una opción de las 15 disponibles, la promesa que gestiona la asincronía de este imput y el await para que el resto de código espere a la resolución de la promesa.  
 Cuando esta se resuelve, se ejecutan la opción elegida y se muestra de nuevo el menú de opciones.
 
 #### 4 Readme.md
 
 Archivo en el que nos encontramos, que detalla la descripción del programa.
 
-#### 5 challenge.js  
-Aquí estan los datos concretos proporcionados en el CHALLENGE: listado de alumnos y otras funcionalidades.
-
-#### 6 database.js 
+#### 5 database.js 
 
 Con este archivo accedemos a los datos de la lista de estudiantes proporcionados en el challenge.
 
-#### 7 functions.js
+#### 6 functions.js
 
 En este archivo importamos las opciones que se resuelven en el archivo options.js.  
 Mostramos las 15 opciones del showMenu por consola.  
-Tambien aquí se desarrolla la función ejecuteOption con un switch de cada opción.
+Tambien aquí se desarrolla la función executeOption con un switch asignado a cada opción.
 
-#### 8 options.js
+#### 7 options.js
 
 Aquí se desarrollan las funciones de cada opción, una a una según el caso, se muestran por consola y se exportan para poder ejecutarlas en el archivo functions.js  
-#### 9 package.jason  
+
+#### 8 package.json  
+
+Se incluye este fichero package.json para indicarle a node que estamos utilizando módulos de importación y exportación.
+
     "type": "module"
 
